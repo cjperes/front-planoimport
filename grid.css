@@ -1,0 +1,387 @@
+/* OPEN NORK FRAMEWORK CSS - A grid framework system by NORK.DIGITAL  https://github.com/cjperes/opennork */
+
+
+/* reset css */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* fim reset css */
+
+
+/* GERAL */
+
+h1 {
+    margin: 10px 0 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+h2 {
+    margin: 10px 0 10px;
+    text-align: center;
+    font-size: 25px;
+    color: #000;
+    padding-top: 50px
+}
+
+p {
+    margin: 30px 0 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    padding-bottom: 60px;
+}
+
+.home {
+    background: #000;
+    text-decoration-color: white;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+@media (min-width: 1170px) {
+    .container {
+        max-width: 1170px;
+        padding: 0;
+    }
+}
+
+.row {
+    width: 100%;
+    align-content: center;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.bg-full {
+    height: 100vh;
+    padding: 7%;
+}
+
+.bg-90 {
+    height: 90vh;
+    padding: 7%;
+}
+
+.bg-80 {
+    height: 80vh;
+    padding: 7%;
+}
+
+
+/* fim GERAL */
+
+
+/* colunas */
+
+.col {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin-right: -4px;
+    *zoom: 1;
+    *display: inline;
+}
+
+
+/* 2 colonas */
+
+@media (min-width: 480px) {
+    .col-2 {
+        width: 50%;
+    }
+}
+
+
+/* 3 colunas */
+
+@media (min-width: 728px) {
+    .col-3 {
+        width: 33.3333%;
+    }
+}
+
+
+/* sidebar */
+
+@media (min-width: 992px) {
+    .col-content {
+        width: 60%;
+    }
+    .col-sidebar {
+        width: 40%;
+    }
+}
+
+
+/* fim colunas */
+
+
+/* Buttons */
+
+.button {
+    margin-left: 15px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center !important;
+    border: 1px solid #51a8b1;
+    width: 150px!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #000!important;
+    transition: 1s;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background: #51a8b1!important
+}
+
+
+/* fim Buttons*/
+
+
+/* animations */
+
+.arrow {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    -webkit-animation-name: arrow;
+    animation-name: arrow;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 20px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes arrow {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 20px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.anima2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    -webkit-animation-name: anima2;
+    animation-name: anima2;
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+@-webkit-keyframes anima2 {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        top: 0px;
+        left: 100px;
+    }
+    50% {
+        top: 100px;
+        left: 100px;
+    }
+    75% {
+        top: 100px;
+        left: 0px;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+
+/* fim animations */
+
+
+/* PARALLAX */
+
+.parallax {
+    /* Imagem a utilizar */
+    background-image: url("http://planoimport.com.br/wp-content/uploads/2017/05/parallax-1.jpg") !important;
+    /* Tamanho da imagem recomendado usar Viewport Units */
+    height: 100vh;
+    /* parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* FIM PARALLAX */
+
+
+/* COLORS */
+
+.bg-form {
+    background: #ebebeb;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.bg-black {
+    background: black;
+}
+
+.bg-blue {
+    background: blue;
+}
+
+.bg-red {
+    background: red;
+}
+
+
+/* FIM COLORS */
+
+
+/* DEMO */
+
+.teste {
+    background: #000;
+    padding: 10px;
+    border-radius: 2px;
+    text-align: center;
+    margin: 2px 0;
+    color: #fff;
+}
+
+/* CUSTOM CSS */
+
+.message {
+    margin: 40px;
+    color: #51a8b1;
+    font-size: 16px;
+}
+
+.message a {
+    color: #000;
+    text-decoration: none;
+}
+
+.img {
+    position: relative;
+    left: 45px;
+    top: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+input {
+    margin-top: 10px !important;
+    margin-bottom: 10px;
+    margin-left: 15px !important;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 300px;
+    font-size: 13px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+    -webkit-transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    -ms-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+}
+
+input:focus {
+    box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.login {
+    padding: 45px;
+     position: absolute;
+    align-items: center;
+    align-content: center;
+    top: 50%;
+    left: 48%;
+    margin: -150px 0 0 -150px;
+    width: 450px;
+    height: 400px;
+}
+
+
+ position: absolute;
+    align-items: center;
+    align-content: center;
+    top: 50%;
+    left: 40%;
+    margin: -150px 0 0 -150px;
+    width: 450px;
+    height: 400px;
+
+position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 560px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
