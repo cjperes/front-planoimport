@@ -1,4 +1,4 @@
-/* OPEN NORK FRAMEWORK CSS - A grid framework system by NORK.DIGITAL  https://github.com/cjperes/opennork */
+/* OPEN NORK FRAMEWORK CSS - A grid framework system by NORK.DIGITAL  https://github.com/cjperes/opennork/tree/gh-pages */
 
 
 /* reset css */
@@ -267,7 +267,7 @@ p {
 
 .parallax {
     /* Imagem a utilizar */
-    background-image: url("http://planoimport.com.br/wp-content/uploads/2017/05/parallax-1.jpg") !important;
+    background-image: url("http://planoimport.com.br/wp-content/uploads/2017/05/bg-consulta.png") !important;
     /* Tamanho da imagem recomendado usar Viewport Units */
     height: 100vh;
     /* parallax effect */
@@ -399,4 +399,12 @@ select {
     font-size: 25px;
     color: #51a8b1;
         
+}
+
+.pdt {
+    padding-top: 1%;
+}
+
+.pdb{
+    padding-bottom: 8%;
 }
